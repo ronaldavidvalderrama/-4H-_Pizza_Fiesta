@@ -113,4 +113,12 @@ INSERT INTO ingredientes (nombre, stock, precio_extra) VALUES
 INSERT INTO pedidos (id_cliente, hora_recogida, estado) VALUES
 (4, '2023-10-02 18:30:00', 'pagado');
 
+-- 6. **Añadir productos a un pedido específico:**
+
+INSERT INTO Detalle_pedido (id_pedido, id_producto, cantidad, precio_unitario) VALUES
+(4, 5, 1, 12000),  -- 1 Pizza BBQ
+(4, 6, 2, 2500);   -- 2 Sprites
+
+
+
 
