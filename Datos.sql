@@ -83,3 +83,34 @@ SELECT * FROM pizza_ingredientes;
 SELECT * FROM combo;
 
 SELECT * FROM combo_producto;
+
+
+
+-- Consultas de prueba para verificar la integridad de los datos
+
+--1. **Registrar un nuevo cliente:**
+
+INSERT INTO clientes (nombre, telefono, direccion) VALUES
+('Ana Torres', '111222333', 'Calle Nueva 456');
+
+-- 2. **Agregar un nuevo producto (pizza) al menú:**
+
+INSERT INTO productos (nombre, tipo, tamaño, precio_base) VALUES
+('Pizza BBQ', 'pizza', 'grande', 12000);
+
+-- 3. **Registrar una bebida en el menú:**
+
+INSERT INTO productos (nombre, tipo, tamaño, precio_base) VALUES
+('Sprite', 'bebida', 'mediana', 2500);
+
+-- 4. **Agregar un ingrediente a la base de datos:**
+
+INSERT INTO ingredientes (nombre, stock, precio_extra) VALUES
+('Albahaca Fresca', 40, 700);
+
+-- 5. **Crear un pedido para un cliente:**
+
+INSERT INTO pedidos (id_cliente, hora_recogida, estado) VALUES
+(4, '2023-10-02 18:30:00', 'pagado');
+
+
